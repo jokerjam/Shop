@@ -1,0 +1,17 @@
+﻿@model CarsListViewModel
+
+<h2>Все автомобили</h2>
+<h4>@Model.currCategory</h4>
+@{
+    foreach (var car in Model.allCars)
+    {
+        <div>
+            <h3>@car.name</h3>
+            <p>@car.price.ToString("c")</p>
+
+        </div>
+    }
+
+}
+
+
